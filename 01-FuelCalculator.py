@@ -1,9 +1,10 @@
 import math
 
 def main():
-    file = open("data/01-Mass.txt")
-    lines = file.readlines()
-
+    lines = []
+    with open("data/01-Mass.txt") as file:
+        lines = file.readlines()
+    
     end_total = 0
     for line in lines:
         mass = int(line)
